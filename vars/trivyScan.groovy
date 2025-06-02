@@ -15,7 +15,7 @@ def vulnerability(String imageName) {
     """
 }
 
-def reportConverter() {
+def reportsConverter() {
     sh '''
         trivy convert \
             --format template --template "@/usr/local/share/trivy/templates/html.tpl" \
